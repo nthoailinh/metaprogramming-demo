@@ -1,0 +1,36 @@
+name: Markdown Quality Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install write-good
+      run: npm install -g write-good
+      
+    - name: Find and check markdown files
+      run: |
+        echo "Checking markdown files for writing quality..."
+        find . -name "*.md" -type f | while read file; do
+          echo "Checking: $file"
+          if ! write-good "$file"; then
+            echo "Issues found in $file"
+            exit 1
+          else
+            echo "$file looks good"
+          fi
+        done
