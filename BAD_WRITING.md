@@ -10,8 +10,8 @@ excessive adverbs and unclear language.
 
 Writers can enhance text by avoiding weak words and unclear phrases.
 
-This text demonstrates the issues that linting tools can identify.
+This text demonstrates the issues that linting tools identify.
 
 Active voice constructions improve clarity and readability.
 
-We fixed all passive voice issues to satisfy the linting requirements.
+We fixed all passive voice issues to meet the linting requirements.
