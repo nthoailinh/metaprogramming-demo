@@ -5,11 +5,13 @@ write-good suggestions.
 
 ## Improvements Made
 
-This content is important. The writing has been improved by removing 
+This content is important. We improved the writing by removing 
 excessive adverbs and unclear language.
 
-The text could be enhanced by avoiding weak words and unclear phrases.
+Writers can enhance text by avoiding weak words and unclear phrases.
 
 This text demonstrates the issues that linting tools can identify.
 
 Active voice constructions improve clarity and readability.
+
+We fixed all passive voice issues to satisfy the linting requirements.
