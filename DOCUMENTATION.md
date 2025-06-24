@@ -5,8 +5,8 @@ and their implementation.
 
 ## Overview
 
-The exercises cover various aspects of build automation and quality assurance 
-in software development workflows.
+The exercises cover build automation and quality assurance in software 
+development workflows.
 
 ## Build Systems
 
