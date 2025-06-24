@@ -1,13 +1,11 @@
 #!/bin/bash
+set -euo pipefail
 
-# This script has several shellcheck issues
-name=$1
-if [ $name ]; then
+# Fixed version of the script
+name="${1:-}"
+if [[ -n "$name" ]]; then
     echo "Hello, $name!"
+else
+    echo "Please provide a name"
+    exit 1
 fi
-
-# Unused variable
-unused_var="test"
-
-# Unquoted variable that could cause issues
-echo $name
